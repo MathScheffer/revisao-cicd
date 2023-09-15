@@ -20,9 +20,9 @@ jobs:
       uses: docker/login-action@v3.0.0
       with:
         # Username used to log against the Docker registry
-        username: matheusscheffer
+        Username: matheusscheffer
         # Password or personal access token used to log against the Docker registry
-        password: ${{secrets.PASSWORD}}
+        Password: ${{secrets.PASSWORD}}
     - name: Build and push Docker images
       uses: docker/build-push-action@v5.0.0
       with:
